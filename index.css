@@ -16,3 +16,9 @@ body {
 header {
     background-color: ;
 }
+
+#survey-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}

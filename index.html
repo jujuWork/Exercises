@@ -19,9 +19,26 @@
     </header>
 
     <form id="survey-form">
-        <input type="text" name="Name" id="name" required>
-        <input type="email" name="Email" id="email" required>
-        <input type="number" name="Number" id="number" required min="0" max="11">
+        <label for="name-lable" id="name-label">Name</label>
+        <input type="text" name="Name" id="name" required placeholder="Enter your name">
+
+        <label for="email-label" id="email-label">Email</label>
+        <input type="email" name="Email" id="email" required placeholder="Enter your email">
+
+        <label for="number-label" id="number-label">Number</label>
+        <input type="number" name="Number" id="number" required min="0" max="9999" placeholder="Enter your contact number">
+
+        <label for="Role" id="role-label">Your Current Role</label>
+        <select name="Select" id="dropdown">
+            <option value="Select">Current Role</option>
+            <option value="Number">Full Time</option>
+            <option value="Email">Part Time</option>
+        </select>
+        
+        <label for="Gender" class="gender">Gender</label>
+        <input type="radio" name="Male" id="male" value="Male">
+        <input type="radio" name="Female" id="female" value="Female">
+
     </form>
 
 </body>
