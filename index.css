@@ -3,22 +3,17 @@ html {
 }
 
 body {
-    max-width: 1440px;
-    width: 100vw;
-    border: 5px solid red;
-    height: 100vh;
-    overflow: hidden;
+    max-width: 610px;
     margin: 0 auto;
-    background-color:  #F4F6FF;
-    margin: 0 auto;
+    background-color:  rgba(0,0,0,0.1);
 }
 
 header {
-    background-color: ;
+    border: 1px solid red;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-#survey-form {
+h1 {
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    justify-content: center;
 }
