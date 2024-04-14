@@ -5,11 +5,12 @@ html {
 body {
     max-width: 1440px;
     width: 100vw;
-    border: 1px solid red;
+    border: 5px solid red;
     height: 100vh;
     overflow: hidden;
     margin: 0 auto;
     background-color:  #F4F6FF;
+    margin: 0 auto;
 }
 
 header {
