@@ -145,6 +145,6 @@ tr.data td {
     padding: 0.3rem 0.25rem 0;
 }
 
-tr.data td: :last-of-type {
+tr.data td:last-of-type {
     padding-right: 0.5rem;
 }
