@@ -115,5 +115,14 @@ hr {
 .quote {
     color: #00ffff;
     text-align: center;
-    font-size: 2.4rem;    
+    font-size: 2.4rem;
+    font-family: Raleway, sans-serif;
+}
+
+.quote::before {
+    content: '" ';
+}
+
+.quote::after {
+    content: ' "';
 }
