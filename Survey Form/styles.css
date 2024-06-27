@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0ECE4;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+header h4 {
+    font-style: italic;
+}
+
+/*---------------- FORM -------------*/
+
+form {
+    border: 1px solid black;
+    background-color: rgba(149, 210, 179, 0.3);
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 20px 10px;
+}
+
+input, select {
+    height: 1.5rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+input {
+    padding-left: 10px;
+}
+
+select {
+    margin-top: 5px;
+    padding-left: 9px;
+}
