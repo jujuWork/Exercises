@@ -10,17 +10,17 @@
 <body>
     <main>
         <header>
-            <h1>Family Registration Form</h1>
-            <h4>Please fill this form to register</h4>
+            <h1 id="title">Family Registration Form</h1>
+            <p id="description"><h4>Please fill this form to register</h4></p>
             <hr>
         </header>
     
-        <form id="registration-form">
+        <form id="survey-form">
             <div class="label-name">
-                <label for="name" id="name">Name</label>
+                <label for="name" id="firstName">Name</label>
             </div>
             <div class="input-fields">
-                <input type="text" name="first-name" id="firstName" placeholder="First Name" required autocomplete="off">
+                <input type="text" name="first-name" id="Name" placeholder="First Name" required autocomplete="off">
                 <input type="text" name="last-name" id="lastName" placeholder="Last Name" required autocomplete="off">
             </div>
 
@@ -42,7 +42,7 @@
             <div class="label-name"></div>
                 <label for="phone" id="phone">Contact</label>
             <div class="input-fields">
-                <input type="email" name="email" id="emailAdress" placeholder="Email Address" required autocomplete="off">
+                <input type="email" name="email" id="emailAddress" placeholder="Email Address" required autocomplete="off">
                 <input type="number" name="number" id="phoneNumber" placeholder="Contact Number" required autocomplete="off">
             </div>
 
