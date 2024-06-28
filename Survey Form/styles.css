@@ -73,6 +73,32 @@ input {
 }
 
 .inputFull {
-    width: 97.5%;
+    width: 97.8%;
     padding: 0 2px;
+}
+
+.inputMedium {
+    width: 85%;
+}
+
+.inputSmall {
+    width: 11%;
+}
+
+.button {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+button {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+    border-radius: 10px;
+    border: none;
+    background-color: #55AD9B;
 }
