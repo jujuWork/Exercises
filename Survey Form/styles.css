@@ -13,6 +13,14 @@ body {
     height: 100%;
 }
 
+main {
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*-------------- HEADER -----------------*/
+
 header {
     display: flex;
     align-items: center;
@@ -20,42 +28,51 @@ header {
     flex-direction: column;
     gap: 5px;
     margin-top: 50px;
+    width: 100%;
 }
 
-header h4 {
+header > h1 {
+    margin-bottom: 30px;
+}
+
+header > h4 {
     font-style: italic;
+    margin-bottom: 2px;
 }
 
-/*---------------- FORM -------------*/
+hr {
+    border: 1px solid #55AD9B;
+    width: 100%;
+}
+
+/* ---------------- FORM ------------- */
 
 form {
-    border: 1px solid black;
-    background-color: rgba(149, 210, 179, 0.3);
-    width: 80vw;
-    height: 100%;
     margin: 0 auto;
-    border-radius: 5px;
+    width: 80%;
+    height: 100%;
+    margin-top: 30px;
+    overflow: hidden;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 10px 20px 10px;
-    font-weight: 600;
-}
-
-input, select {
-    height: 1.5rem;
-    border-radius: 3px;
-    border: 1px solid transparent;
+.space {
+    padding: 10px;
 }
 
 input {
-    padding-left: 10px;
-    margin-top: 3px;
+    margin-top: 5px;
+    height: 30px;
+    width: 48%;
+    padding: 0 2px;
+    border: none;
 }
 
-select {
-    margin-top: 5px;
-    padding-left: 9px;
+.label-name {
+    font-size: 1.3rem;
+    margin: 5px 0 5px 0
+}
+
+.inputFull {
+    width: 97.5%;
+    padding: 0 2px;
 }

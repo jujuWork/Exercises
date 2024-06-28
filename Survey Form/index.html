@@ -3,75 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Town Survey Form</title>
+    <title>Family Registration Form</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Town Survey Form</h1>
-        <h4>Thank you for taking this survey</h4>
-    </header>
+    <main>
+        <header>
+            <h1>Family Registration Form</h1>
+            <h4>Please fill this form to register</h4>
+            <hr>
+        </header>
     
-    <form id="survery-form">
-        <div class="form-group">
-            <label for="name" id="name-label">Name:</label>
-            <input 
-            type="text" 
-            name="name" 
-            id="name" 
-            class="input-field"
-            placeholder="Enter your name"
-            autocomplete="off"
-            required
+        <form id="registration-form">
+            <div class="label-name">
+                <label for="name" id="name">Name</label>
+            </div>
+            <div class="input-fields">
+                <input type="text" name="first-name" id="firstName" placeholder="First Name" required autocomplete="off">
+                <input type="text" name="last-name" id="lastName" placeholder="Last Name" required autocomplete="off">
+            </div>
+
+            <div class="space"></div>
+
+            <div class="label-name">
+                <label for="address" id="address">Address</label>
+            </div>
+            <div class="input-fields">
+                <input type="text" name="region" id="regionName" placeholder="Region" required autocomplete="off">
+                <input type="text" name="state" id="stateName" placeholder="State" required autocomplete="off">
+                <input type="text" name="address" id="streetAddress" placeholder="Street Address" class="inputFull" required autocomplete="off">
+                <input type="text" name="city" id="city" placeholder="City" required autocomplete="off">              
+                <input type="number" name="zipcode" id="zipCode" placeholder="Zip Code" required autocomplete="off">              
+            </div>
             
-            />
-        </div>
-        <div class="form-group">
-            <label for="email" id="email-label">Email:</label>
-            <input 
-            type="email"
-            name="email"
-            id="email"
-            class="input-field"
-            placeholder="Enter your email"
-            autocomplete="off"
-            required
-            />
-        </div>
-        <div class="form-group">
-            <label for="number" id="tel-label">Age:(optional)</label>
-            <input 
-            type="number"
-            name="tel"
-            id="tel"
-            placeholder="Age"
-            autocomplete="off"
-            />       
-        </div>
-        <div class="form-group">
-            <label for="place" id="place-label">Town Name</label>
-            <input 
-            type="text"
-            id="town-name"
-            name="town-name"
-            placeholder="Town Name"
-            autocomplete="off"
-            />
-            <select name="Location" id="location">
-                <option value="Location">Location</option>
-                <option value="North">North</option>
-                <option value="East">East</option>
-                <option value="West">West</option>
-                <option value="South">South</option>
-            </select>
-        </div>
-        <div>
-            Would you recommmend your town to your friend?
-        </div>
-        <div>
-            What would you like to improved in your town?
-        </div>
-    </form>
+            <div class="space"></div>
+
+            <div class="label-name"></div>
+                <label for="phone" id="phone">Contact</label>
+            <div class="input-fields">
+                <input type="email" name="email" id="emailAdress" placeholder="Email Address" required autocomplete="off">
+                <input type="number" name="number" id="phoneNumber" placeholder="Contact Number" required autocomplete="off">
+
+            </div>
+        </form>
+    </main>
 </body>
 </html>
