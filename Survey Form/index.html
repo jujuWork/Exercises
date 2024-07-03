@@ -11,17 +11,31 @@
     <main>
         <header>
             <h1 id="title">Family Registration Form</h1>
-            <p id="description"><h4>Please fill this form to register</h4></p>
+            <p id="description">Please fill this form to register</p>
             <hr>
         </header>
     
         <form id="survey-form">
             <div class="label-name">
-                <label for="name" id="firstName">Name</label>
+                <label for="name" id="name-label">Name</label>
             </div>
             <div class="input-fields">
-                <input type="text" name="first-name" id="Name" placeholder="First Name" required autocomplete="off">
+                <input type="text" name="first-name" id="name" placeholder="First Name" required autocomplete="off">
                 <input type="text" name="last-name" id="lastName" placeholder="Last Name" required autocomplete="off">
+            </div>
+
+            <div class="space"></div>
+
+            <div class="label-name">
+                <label for="gender" id="gender">Gender</label>
+            </div>
+            <div class="input-fields-radio">
+                <input type="radio" name="gender" id="male" value="male">
+                    <label for="male" class="gender-category">Male</label>
+            </div>
+            <div class="input-fields-radio">
+                <input type="radio" name="gender" id="female" value="female">
+                    <label for="male" class="gender-category">Female</label>
             </div>
 
             <div class="space"></div>
@@ -39,11 +53,20 @@
             
             <div class="space"></div>
 
-            <div class="label-name"></div>
-                <label for="phone" id="phone">Contact</label>
+            <div class="label-name">
+                <label for="phone" id="email-label">Email</label>
+            </div>
             <div class="input-fields">
-                <input type="email" name="email" id="emailAddress" placeholder="Email Address" required autocomplete="off">
-                <input type="number" name="number" id="phoneNumber" placeholder="Contact Number" required autocomplete="off">
+                <input type="email" name="email" id="email" placeholder="Email Address" required autocomplete="off" class="inputFull">
+            </div>
+
+            <div class="space"></div>
+            
+            <div class="label-name">
+                <label for="contact" id="number-label">Contact</label>
+            </div> 
+            <div class="input-fields">
+                <input type="number" id="number" min="1" max="9" placeholder="Your contact number" class="inputFull" required autocomplete="off">
             </div>
 
             <div class="space"></div>
@@ -52,20 +75,35 @@
                 <label for="familymember">Family Member</label>
             </div>
             <div class="input-fields">
-                <input type="text" id="familyMember" placeholder="Complete Name" class="inputMedium">
-                <input type="number" name="age" id="memberAge" class="inputSmall" placeholder="Age">
-                <input type="text" id="familyMember" placeholder="Complete Name" class="inputMedium">
-                <input type="number" name="age" id="memberAge" class="inputSmall" placeholder="Age">
-                <input type="text" id="familyMember" placeholder="Complete Name" class="inputMedium">
-                <input type="number" name="age" id="memberAge" class="inputSmall" placeholder="Age">
+                <input type="text" id="familyMember" placeholder="Complete Name(Child)" class="inputMedium">
+                    <select name="age" id="dropdown">
+                        <option class="inputSmall">Age</option>
+                    <option class="inputSmall">00~14</option>
+                    </select>
+                <input type="text" id="familyMember" placeholder="Complete Name(Adolescence)" class="inputMedium">
+                    <select name="age" id="dropdown">
+                        <option class="inputSmall">Age</option>
+                    <option class="inputSmall">14~21</option>
+                    </select>
+                <input type="text" id="familyMember" placeholder="Complete Name(Mature)" class="inputMedium">
+                <select name="age" id="dropdown">
+                    <option class="inputSmall">Age</option>
+                <option class="inputSmall">21~99</option>
+                </select>
             </div>
-        </form>
+             <div class="space"></div>
 
-        <div class="space"></div>
+             <div class="confirmation">
+                <input type="checkbox" name="checkbox" id="check" value="confirmation">
+                    <label for="check" class="p"></label>
+                <input type="checkbox" name="checkbox" id="check" value="confirmation">
+                    <label for="check" class="p"></label>
+            </div>
 
         <div class="button">
-            <button type="button" onclick="alert('Thank you for registering')">Submit</button>
+            <button type="submit" id="submit" onclick="alert('Thank you for registering')">Submit</button>
         </div>
+        </form>
     </main>
 </body>
 </html>

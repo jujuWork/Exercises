@@ -11,6 +11,7 @@ html {
 body {
     background-color: #E0ECE4;
     height: 100%;
+    max-width: 1440px;
 }
 
 main {
@@ -55,6 +56,10 @@ form {
     overflow: hidden;
 }
 
+.input-fields {
+    display: relative;
+}
+
 .space {
     padding: 10px;
 }
@@ -67,22 +72,49 @@ input {
     border: none;
 }
 
+.input-fields-radio {
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.gender-category {
+    vertical-align: middle;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
 .label-name {
     font-size: 1.3rem;
-    margin: 5px 0 5px 0
+    margin: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .inputFull {
-    width: 97.8%;
+    width: 97.5%;
     padding: 0 2px;
 }
 
 .inputMedium {
-    width: 85%;
+    width: 86%;
 }
 
 .inputSmall {
-    width: 11%;
+    width: 20%;
+    text-align: center;
+}
+
+.confirmation {
+    width: 24px;
+    display: flex;
+}
+
+.confirmation > .p {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 0.8em;
+    border: 1px solid red;
 }
 
 .button {
