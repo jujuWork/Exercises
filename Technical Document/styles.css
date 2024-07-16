@@ -10,12 +10,12 @@ code::after {
     content: ">`";
 }
 
-.attributes code::before {
-    content: "`<";
+.sign::before {
+    content: "`";
 }
 
-.attributes code::after {
-    content: "</a>`";
+.sign::after {
+    content: "`";
 }
 
 body, html {
