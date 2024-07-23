@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 code::before {
     content: "`<";
 }
@@ -27,4 +31,26 @@ body, html {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+}
+
+nav {
+    position: fixed;
+    left: 50px;
+    top: 10px;
+}
+
+.nav-bar {
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 10px 10px;
 }
