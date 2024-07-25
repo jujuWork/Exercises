@@ -50,7 +50,7 @@ nav {
     justify-content: space-evenly;
 }
 
-.nav-list {
+nav li {
     list-style: none;
     padding: 10px 10px;
 }
